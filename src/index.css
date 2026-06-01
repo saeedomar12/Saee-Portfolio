@@ -3,24 +3,24 @@
   --bg-dark: #070709;
   --bg-card: rgba(13, 13, 17, 0.7);
   --bg-card-hover: rgba(20, 20, 26, 0.85);
-  
+
   --text-primary: #f4f4f6;
-  --text-secondary: #9a9ab0;
+  --text-secondary: #9a8ab0;
   --text-muted: #5e5e6e;
-  
-  --border-light: rgba(255, 255, 255, 0.06);
+
+  --border-light: rgba(8, 2, 2, 0.06);
   --border-hover: rgba(255, 255, 255, 0.15);
-  
+
   --color-emerald: #10b981;
   --color-emerald-glow: rgba(16, 185, 129, 0.15);
   --color-violet: #8b5cf6;
   --color-violet-glow: rgba(139, 92, 246, 0.15);
   --color-amber: #f59e0b;
-  
+
   /* Fonts */
   --font-headings: 'Outfit', -apple-system, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
-  
+
   /* Glows */
   --glow-radial: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.04) 0%, transparent 60%);
 }
@@ -66,7 +66,12 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-headings);
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -78,6 +83,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -85,10 +91,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes pulseGlow {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.4;
     transform: scale(1);
   }
+
   50% {
     opacity: 0.6;
     transform: scale(1.05);
@@ -99,6 +108,7 @@ h1, h2, h3, h4, h5, h6 {
   0% {
     background-position: 0 0;
   }
+
   100% {
     background-position: 40px 40px;
   }
