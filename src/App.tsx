@@ -97,7 +97,7 @@ function App() {
               <div className="visual-circle-glow"></div>
               <div className="visual-profile-card">
                 <div className="visual-profile-pic-container">
-                  <img src="/profile.jpg" alt="Saeedomar Razuman" className="visual-profile-pic" />
+                  <img src="./profile.jpg" alt="Saeedomar Razuman" className="visual-profile-pic" />
                 </div>
                 <div className="visual-profile-name">Saeedomar Razuman</div>
                 <div className="visual-profile-title">AI & Deep Learning Practitioner</div>
