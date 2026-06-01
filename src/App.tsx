@@ -33,7 +33,7 @@ function App() {
 
     const elements = document.querySelectorAll('.reveal')
     elements.forEach((el) => observer.observe(el))
-    
+
     return () => observer.disconnect()
   }, [])
 
@@ -74,7 +74,7 @@ function App() {
             <div className="hero-status">
               <span className="badge badge-emerald">
                 <span className="badge-dot"></span>
-                Available for OJT & Research Collaboration
+                Seeking Employment
               </span>
             </div>
             <h1 className="hero-title">
@@ -91,7 +91,7 @@ function App() {
               <a href="#contact" className="btn btn-secondary">Get in Touch</a>
             </div>
           </div>
-          
+
           <div className="hero-visual reveal" style={{ transitionDelay: '0.2s' }}>
             <div className="visual-canvas">
               <div className="visual-circle-glow"></div>
@@ -128,7 +128,7 @@ function App() {
             <span className="section-label">Background</span>
             <h2 className="section-headline">Academic Foundation & Training</h2>
           </div>
-          
+
           <div className="about-grid">
             <div className="about-text">
               <p>
@@ -138,7 +138,7 @@ function App() {
                 Through my academic background at St Michael's College and intensive industry-level OJT training at Mindanao Business & IT Solutions, I've developed deep technical competencies in machine learning pipelines, full-stack application development, and interactive design.
               </p>
             </div>
-            
+
             <div className="about-cards-container">
               <div className="glass-card about-info-card">
                 <div className="badge badge-emerald" style={{ marginBottom: '12px' }}>
@@ -181,7 +181,7 @@ function App() {
               <p className="project-description">
                 Banana crops are highly susceptible to leaf diseases that can devastate yields. This research project implements automated computer vision classifiers using convolutional neural architectures. Farmers can upload crop imagery to obtain instantaneous diagnostic tags.
               </p>
-              
+
               <div className="project-metrics">
                 <div className="metric-card">
                   <div className="metric-number">96.8%</div>
@@ -206,7 +206,7 @@ function App() {
               <div className="project-visual-content">
                 <div className="ml-confidence-chart">
                   <div className="chart-title">Confidence Classifier Output</div>
-                  
+
                   <div className="chart-row">
                     <div className="chart-row-label">
                       <span>Sigatoka Disease</span>
@@ -306,7 +306,7 @@ function App() {
 
           <div className="timeline-container">
             <div className="timeline-line"></div>
-            
+
             <div className="timeline-item">
               <div className="timeline-marker"></div>
               <div className="glass-card timeline-card">
@@ -392,7 +392,7 @@ function App() {
             <p className="contact-sub">
               Open to research collaborations, OJT internships, and deep learning engineering opportunities.
             </p>
-            
+
             <div className="contact-action-box">
               <span className="contact-email">saeedomar.razuman@smcic.edu.ph</span>
               <button className="btn btn-primary btn-copy" onClick={copyEmail}>

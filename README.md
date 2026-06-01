@@ -52,7 +52,6 @@ We have configured a GitHub Actions workflow to automatically build and deploy y
    git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
    git push -u origin main
    ```
-
 ### Step 2: Enable GitHub Actions Deployment on GitHub
 
 1. Go to your repository page on **GitHub.com**.
