@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import './App.css'
 
 function App() {
-  const [copied, setCopied] = useState(false)
   const [chartTriggered, setChartTriggered] = useState(false)
 
   // Interactive mouse tracking glow
@@ -36,12 +35,6 @@ function App() {
 
     return () => observer.disconnect()
   }, [])
-
-  const copyEmail = () => {
-    navigator.clipboard.writeText('saeedomar.razuman@smcic.edu.ph')
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2500)
-  }
 
   return (
     <>
@@ -78,10 +71,10 @@ function App() {
               </span>
             </div>
             <h1 className="hero-title">
-              Engineering the Future of <span>Agricultural Intelligence</span>
+              IT Graduate <span>Profile</span>
             </h1>
             <p className="hero-description">
-              Hi, I'm Saeedomar Razuman. I develop computer vision models and machine learning pipelines that address real-world challenges, with a primary focus on smart agriculture and bioscience diagnostics.
+              Hi, I'm Saeedomar Razuman. I am an IT graduate specializing in process automation, custom web applications, and system-based development. Combining a background in graphic design with technical expertise in Power Apps and B2B lead generation, I build seamless digital tools that optimize business operations and drive growth.
             </p>
             <div className="hero-ctas">
               <a href="#projects" className="btn btn-primary">
@@ -107,12 +100,12 @@ function App() {
                     <div className="visual-stat-label">Awards</div>
                   </div>
                   <div className="visual-stat-item">
-                    <div className="visual-stat-val">96%</div>
-                    <div className="visual-stat-label">ML Acc.</div>
+                    <div className="visual-stat-val">85%</div>
+                    <div className="visual-stat-label">IT Expertise</div>
                   </div>
                   <div className="visual-stat-item">
                     <div className="visual-stat-val">100%</div>
-                    <div className="visual-stat-label">Dedicated</div>
+                    <div className="visual-stat-label">Passionate</div>
                   </div>
                 </div>
               </div>
@@ -132,7 +125,8 @@ function App() {
           <div className="about-grid">
             <div className="about-text">
               <p>
-                My journey into engineering began with a curiosity about how intelligence can be automated and applied to solve existential challenges, such as food security and agricultural diagnostics.
+                My journey into a Bachelor of Science in Information Technology began with a curiosity about how digital intelligence and structural systems can be leveraged to craft impactful human-centered experiences.
+                I am deeply fascinated by the intersection of form and function—specifically how graphic design principles, intuitive user interfaces, and robust web and application development converge to solve real-world usability challenges and build seamless digital ecosystems.
               </p>
               <p>
                 Through my academic background at St Michael's College and intensive industry-level OJT training at Mindanao Business & IT Solutions, I've developed deep technical competencies in machine learning pipelines, full-stack application development, and interactive design.
@@ -195,7 +189,8 @@ function App() {
 
               <div className="project-tech">
                 <span className="project-tech-tag">Python</span>
-                <span className="project-tech-tag">TensorFlow</span>
+                <span className="project-tech-tag">Django</span>
+                <span className="project-tech-tag">React</span>
                 <span className="project-tech-tag">Computer Vision</span>
                 <span className="project-tech-tag">Deep Learning</span>
               </div>
@@ -209,31 +204,31 @@ function App() {
 
                   <div className="chart-row">
                     <div className="chart-row-label">
-                      <span>Sigatoka Disease</span>
-                      <span>{chartTriggered ? '96.8%' : '0%'}</span>
+                      <span>Black Sigatoka Disease</span>
+                      <span>{chartTriggered ? '95.9%' : '95.9%'}</span>
                     </div>
                     <div className="chart-bar-bg">
-                      <div className="chart-bar-fill" style={{ width: chartTriggered ? '96.8%' : '0%' }}></div>
+                      <div className="chart-bar-fill" style={{ width: chartTriggered ? '95.9%' : '95.9%' }}></div>
                     </div>
                   </div>
 
                   <div className="chart-row">
                     <div className="chart-row-label">
-                      <span>Panama Wilt</span>
-                      <span>{chartTriggered ? '2.1%' : '0%'}</span>
+                      <span>Fusarium Wilt</span>
+                      <span>{chartTriggered ? '85.1%' : '85.1%'}</span>
                     </div>
                     <div className="chart-bar-bg">
-                      <div className="chart-bar-fill" style={{ width: chartTriggered ? '2.1%' : '0%' }}></div>
+                      <div className="chart-bar-fill" style={{ width: chartTriggered ? '85.1%' : '85.1%' }}></div>
                     </div>
                   </div>
 
                   <div className="chart-row">
                     <div className="chart-row-label">
                       <span>Healthy Control</span>
-                      <span>{chartTriggered ? '1.1%' : '0%'}</span>
+                      <span>{chartTriggered ? '88.2%' : '88.2%'}</span>
                     </div>
                     <div className="chart-bar-bg">
-                      <div className="chart-bar-fill" style={{ width: chartTriggered ? '1.1%' : '0%' }}></div>
+                      <div className="chart-bar-fill" style={{ width: chartTriggered ? '88.2%' : '88.2%' }}></div>
                     </div>
                   </div>
                 </div>
@@ -259,10 +254,10 @@ function App() {
               <h3 className="skill-category-title">AI & Machine Learning</h3>
               <div className="skill-list">
                 <span className="skill-item-badge">Python</span>
-                <span className="skill-item-badge">TensorFlow</span>
-                <span className="skill-item-badge">Keras</span>
+                <span className="skill-item-badge">React</span>
+                <span className="skill-item-badge">Django</span>
                 <span className="skill-item-badge">Computer Vision</span>
-                <span className="skill-item-badge">Data Analysis</span>
+
               </div>
             </div>
 
@@ -273,9 +268,8 @@ function App() {
               <h3 className="skill-category-title">Frontend Engineering</h3>
               <div className="skill-list">
                 <span className="skill-item-badge">React</span>
-                <span className="skill-item-badge">TypeScript</span>
                 <span className="skill-item-badge">JavaScript</span>
-                <span className="skill-item-badge">Vite</span>
+                <span className="skill-item-badge">Bootstrap</span>
                 <span className="skill-item-badge">Modern CSS</span>
               </div>
             </div>
@@ -322,11 +316,11 @@ function App() {
             <div className="timeline-item">
               <div className="timeline-marker timeline-marker-violet"></div>
               <div className="glass-card timeline-card">
-                <div className="timeline-date">2023 - Present</div>
+                <div className="timeline-date">2026 - Present</div>
                 <h3 className="timeline-role">On-the-Job Training & Intern</h3>
                 <p className="timeline-company">Mindanao Business & IT Solutions</p>
                 <p className="timeline-desc">
-                  Working closely with developers to deliver digital solutions, gaining hands-on software development lifecycle exposure and UI development experience.
+                  Working closely with developers to deliver digital solutions, gaining hands-on software development lifecycle exposure,IT support and UI development experience.
                 </p>
               </div>
             </div>
@@ -384,38 +378,11 @@ function App() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="reveal">
-        <div className="container">
-          <div className="glass-card contact-card">
-            <h2 className="contact-headline">Let's build something impactful</h2>
-            <p className="contact-sub">
-              Open to research collaborations, OJT internships, and deep learning engineering opportunities.
-            </p>
-
-            <div className="contact-action-box">
-              <span className="contact-email">saeedomar.razuman@smcic.edu.ph</span>
-              <button className="btn btn-primary btn-copy" onClick={copyEmail}>
-                {copied ? 'Copied!' : 'Copy Email'}
-              </button>
-            </div>
-
-            <div className="social-links">
-              <a href="https://github.com" target="_blank" className="social-icon-btn" aria-label="GitHub">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-              </a>
-              <a href="https://linkedin.com" target="_blank" className="social-icon-btn" aria-label="LinkedIn">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} Saeedomar Razuman. Designed for modern web engineering standards.</p>
+          <p>&copy; {new Date().getFullYear()} Saeedomar Razuman. Designed for Educational Purposes Only.</p>
         </div>
       </footer>
     </>
